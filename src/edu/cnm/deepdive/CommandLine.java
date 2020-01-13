@@ -11,12 +11,12 @@ public class CommandLine {
   private static int[] parse(String[] args) {
     int[] values = new int[args.length];
     for (int i = 0; i < args.length; i++) {
-      values[i] Integer.parseInt(args[i]);
+      values[i]= Integer.parseInt(args[i]);
     }
     return values;
   }
 
-  private static int sum(int{} data) {
+  private static int sum(int[] data) {
     int total = 0;
     for (int i = 0; i < data.length; i++) {
       total += data[i];
